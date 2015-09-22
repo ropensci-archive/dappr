@@ -1,0 +1,25 @@
+Package: dapper
+Title: General Purpose Client for 'OPeNDAP' Servers
+Description: General purpose R client for 'OPeNDAP' servers. Includes
+    functions to search for 'datasets', get summary information on
+    'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
+    'OPeNDAP' information: http://www.opendap.org/ .
+Version: 0.0.1.9000
+License: MIT + file LICENSE
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut","cre"),
+    email = "myrmecocystus@gmail.com"))
+URL: https://github.com/sckott/dapper
+BugReports: http://www.github.com/sckott/dapper/issues
+LazyData: true
+VignetteBuilder: knitr
+Imports:
+    methods,
+    stats,
+    httr,
+    xml2,
+    ncdf,
+    data.table
+Suggests:
+    knitr,
+    testthat,
+    ncdf4
