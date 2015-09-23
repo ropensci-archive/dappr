@@ -1,6 +1,6 @@
 Package: dapper
 Title: General Purpose Client for 'OPeNDAP' Servers
-Description: General purpose R client for 'OPeNDAP' servers. Includes
+Description: Client for 'OPeNDAP' servers. Includes
     functions to search for 'datasets', get summary information on
     'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
     'OPeNDAP' information: http://www.opendap.org/ .
