@@ -1,17 +1,17 @@
-#' Search for datasets
+#' List datasets for an OPeNDAP server
 #'
 #' @export
 #' @param ... Any number of paths to drill down into an OPeNDAP server
 #' @param url A URL for an OPeNDAP server. Default: see \code{\link{durl}}
 #' @param callopts Curl options
 #' @examples \dontrun{
-#' od_search("MERRA_MONTHLY")
-#' od_search("MERRA_MONTHLY", "MSTMNXMLD.5.2.0")
-#' od_search("MERRA_MONTHLY", "MATMNXLND.5.2.0")
-#' od_search("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000")
-#' od_search("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2015")
+#' od_list("MERRA_MONTHLY")
+#' od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0")
+#' od_list("MERRA_MONTHLY", "MATMNXLND.5.2.0")
+#' od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000")
+#' od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2015")
 #' }
-od_search <- function(..., url = durl(), callopts = list()) {
+od_list <- function(..., url = durl(), callopts = list()) {
   vars <- list(...)
   if (length(vars) == 0) stop("Please pass in some values", call. = FALSE)
   catl <- "catalog.xml"
