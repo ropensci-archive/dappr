@@ -1,7 +1,7 @@
 dapper
 =====
 
-[![Build Status](https://api.travis-ci.org/sckott/dapper)](https://travis-ci.org/sckott/dapper)
+[![Build Status](https://travis-ci.org/sckott/dapper.svg)](https://travis-ci.org/sckott/dapper)
 
 `dapper` is a general purpose R client for working with OPeNDAP servers
 
