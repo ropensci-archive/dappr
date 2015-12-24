@@ -1,3 +1,5 @@
+#' Coerce to info object
+#'
 #' @export
 #' @rdname info
 as_info <- function(x, url) {
@@ -11,5 +13,5 @@ as_info.info <- function(x, url) {
 
 #' @export
 as_info.character <- function(x, url) {
-  dapp_info(x, url)
+  #dapp_info(x, url)
 }

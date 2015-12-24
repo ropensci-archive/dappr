@@ -2,7 +2,11 @@
 % Please edit documentation in R/as_info.R
 \name{as_info}
 \alias{as_info}
+\title{Coerce to info object}
 \usage{
 as_info(x, url)
+}
+\description{
+Coerce to info object
 }
 

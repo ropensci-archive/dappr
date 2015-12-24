@@ -12,11 +12,17 @@
 #' # NASA's ocean color data
 #' url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
 #' fetch('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
+#'
+#' x <- "MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_aph_unc_443_giop_9km.nc.nc4"
 #' }
 fetch <- function(x, ..., fields = 'all', stride = 1, fmt = "nc",
                     url = durl(), store = disk(), read = TRUE, callopts = list()) {
 
-  x <- as_info(x, url)
+  tfile <- tempfile(fileext = ".nc")
+  res <- GET(paste0(url, x), write_disk(path = tfile))
+
+
+  #x <- as_info(x, url)
   dimargs <- list(...)
   check_dims(dimargs, x)
   check_lat_text(dimargs)
