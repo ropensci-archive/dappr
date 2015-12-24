@@ -10,6 +10,13 @@
 #' od_list("MERRA_MONTHLY", "MATMNXLND.5.2.0")
 #' od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000")
 #' od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2015")
+#'
+#' # NASA's ocean color data
+#' url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
+#' od_list("MODISA", url = url)
+#' od_list("MODISA", "L3SMI", url = url)
+#' od_list("MODISA", "L3SMI", "2015", url = url)
+#' od_list("MODISA", "L3SMI", "2015", "336", url = url)
 #' }
 od_list <- function(..., url = durl(), callopts = list()) {
   vars <- list(...)

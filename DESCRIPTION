@@ -22,3 +22,4 @@ Suggests:
     knitr,
     testthat,
     ncdf4
+RoxygenNote: 5.0.1

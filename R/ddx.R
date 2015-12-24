@@ -11,8 +11,11 @@
 #' @author Scott Chamberlain <myrmecocystus@@gmail.com>
 #' @examples \dontrun{
 #' ddx(id = "MERRA_MONTHLY/MSTMNXMLD.5.2.0/2015/MERRA300.prod.simul.tavgM_2d_mld_Nx.201507.hdf")
+#'
+#' # NASA's ocean color data
+#' url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
+#' ddx('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
 #' }
-
 ddx <- function(id, url = durl(), ...) {
   url <- paste0(durl(), id, ".ddx")
   res <- GET(url, ...)
@@ -51,8 +54,8 @@ ddx <- function(id, url = durl(), ...) {
     list(name = zname, attributes = unlist(atts, recursive = FALSE),
          dimensions = unlist(rc(dims), recursive = FALSE))
   })
-  dat <- lapply(out, function(z) data.frame(data.table::rbindlist(z)))
-  structure(dat, class = c("info", "ddx"), datasetid = id)
+  # dat <- lapply(out, function(z) data.frame(data.table::rbindlist(z)))
+  structure(out, class = c("info", "ddx"), datasetid = id)
 }
 
 #' #' @export
