@@ -11,7 +11,8 @@ dds(id, url = durl(), ...)
 
 \item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
 
-\item{...}{Further args passed on to \code{\link[httr]{GET}} (must be named parameters)}
+\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
+be named parameters)}
 }
 \value{
 Prints a data.frame of metadata for a dataset

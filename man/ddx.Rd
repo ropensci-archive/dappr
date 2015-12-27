@@ -9,9 +9,10 @@ ddx(id, url = durl(), ...)
 \arguments{
 \item{id}{Dataset id}
 
-\item{url}{A URL for an ERDDAP server. Default: \url{http://upwell.pfeg.noaa.gov/erddap/}}
+\item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
 
-\item{...}{Further args passed on to \code{\link[httr]{GET}} (must be a named parameter)}
+\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
+be named parameters)}
 }
 \value{
 Prints a summary of the data on return, but you can index to various information.

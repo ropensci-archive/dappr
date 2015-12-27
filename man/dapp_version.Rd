@@ -6,6 +6,12 @@
 \usage{
 dapp_version(url, ...)
 }
+\arguments{
+\item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
+
+\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
+be named parameters)}
+}
 \description{
 Fetch version information
 }

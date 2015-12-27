@@ -3,8 +3,7 @@
 #' @export
 #'
 #' @param id Dataset id
-#' @param url A URL for an OPeNDAP server. Default: see \code{\link{durl}}
-#' @param ... Further args passed on to \code{\link[httr]{GET}} (must be named parameters)
+#' @template args
 #' @return Prints a data.frame of metadata for a dataset
 #' @examples \dontrun{
 #' dds("MERRA_MONTHLY/MAIMNXINT.5.2.0/1980/MERRA100.prod.assim.instM_2d_int_Nx.198004.hdf")

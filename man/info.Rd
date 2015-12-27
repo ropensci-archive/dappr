@@ -4,7 +4,15 @@
 \alias{as_info}
 \title{Coerce to info object}
 \usage{
-as_info(x, url)
+as_info(x, url, ...)
+}
+\arguments{
+\item{x}{input}
+
+\item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
+
+\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
+be named parameters)}
 }
 \description{
 Coerce to info object

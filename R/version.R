@@ -1,6 +1,7 @@
 #' Fetch version information
 #'
 #' @export
+#' @template args
 #' @examples \dontrun{
 #' dapp_version(durl())
 #' dapp_version('http://oceandata.sci.gsfc.nasa.gov/opendap/')

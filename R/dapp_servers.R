@@ -3,6 +3,7 @@
 #' NOT READY YET
 #'
 #' @export
+#' @template args
 #' @examples \dontrun{
 #' dapp_servers()
 #' }

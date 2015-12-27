@@ -2,8 +2,7 @@
 #'
 #' @export
 #' @param id Dataset id
-#' @param url A URL for an ERDDAP server. Default: \url{http://upwell.pfeg.noaa.gov/erddap/}
-#' @param ... Further args passed on to \code{\link[httr]{GET}} (must be a named parameter)
+#' @template args
 #' @return Prints a summary of the data on return, but you can index to various information.
 #' @author Scott Chamberlain <myrmecocystus@@gmail.com>
 #' @examples \dontrun{
@@ -309,3 +308,7 @@ file_info <- function(x) {
 strextract <- function(str, pattern) regmatches(str, regexpr(pattern, str))
 
 strtrim <- function(str) gsub("^\\s+|\\s+$", "", str)
+
+foo <- function(x, y){
+  x[ x$attribute_name == y, "value"]
+}

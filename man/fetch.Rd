@@ -8,9 +8,10 @@ fetch(x, ..., fields = "all", stride = 1, fmt = "nc", url = durl(),
   store = disk(), read = TRUE, callopts = list())
 }
 \arguments{
-\item{...}{Further args passed on to \code{\link[httr]{GET}} (must be a named parameter)}
+\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
+be named parameters)}
 
-\item{url}{A URL for an ERDDAP server. Default: \url{http://upwell.pfeg.noaa.gov/erddap/}}
+\item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
 
 \item{id}{Dataset id}
 }
@@ -27,6 +28,8 @@ fetch(id = "MERRA_MONTHLY/MSTMNXMLD.5.2.0/2015/MERRA300.prod.simul.tavgM_2d_mld_
 # NASA's ocean color data
 url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
 fetch('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
+
+x <- "MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_aph_unc_443_giop_9km.nc.nc4"
 }
 }
 \author{
