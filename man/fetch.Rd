@@ -8,12 +8,31 @@ fetch(x, ..., fields = "all", stride = 1, fmt = "nc", url = durl(),
   store = disk(), read = TRUE, callopts = list())
 }
 \arguments{
-\item{...}{Further args passed on to \code{\link[httr]{GET}} (must
-be named parameters)}
+\item{x}{input}
 
-\item{url}{A URL for an OPeNDAP server. Default: see \code{\link{durl}}}
+\item{...}{Dimension arguments. See examples. Can be any 1 or more of the dimensions
+for the particular dataset - and the dimensions vary by dataset. For each dimension,
+pass in a vector of length two, with min and max value desired.}
 
-\item{id}{Dataset id}
+\item{fields}{(character) Fields to return, in a character vector.}
+
+\item{stride}{(integer) How many values to get. 1 = get every value, 2 = get
+every other value, etc. Default: 1 (i.e., get every value)}
+
+\item{fmt}{(character) One of csv or nc (for netcdf). Default: nc}
+
+\item{url}{A URL for an ERDDAP server. Default: \url{http://upwell.pfeg.noaa.gov/erddap/}}
+
+\item{store}{One of \code{\link{disk}} (default) or \code{\link{memory}}. You
+can pass options to \code{\link{disk}}}
+
+\item{read}{(logical) Read data into memory or not. Does not apply when \code{store}
+parameter is set to memory (which reads data into memory). For large csv, or
+especially netcdf files, you may want to set this to \code{FALSE}, which simply
+returns a summary of the dataset - and you can read in data piecemeal later.
+Default: \code{TRUE}}
+
+\item{callopts}{Pass on curl options to \code{\link[httr]{GET}}}
 }
 \value{
 Prints a summary of the data on return, but you can index to various information.
