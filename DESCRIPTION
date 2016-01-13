@@ -1,15 +1,15 @@
-Package: dapper
+Package: dappr
 Title: General Purpose Client for 'OPeNDAP' Servers
 Description: Client for 'OPeNDAP' servers. Includes
     functions to search for 'datasets', get summary information on
     'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
     'OPeNDAP' information: http://www.opendap.org/ .
-Version: 0.0.2.9000
+Version: 0.0.2.9500
 License: MIT + file LICENSE
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut","cre"),
     email = "myrmecocystus@gmail.com"))
-URL: https://github.com/sckott/dapper
-BugReports: http://www.github.com/sckott/dapper/issues
+URL: https://github.com/sckott/dappr
+BugReports: http://www.github.com/sckott/dappr/issues
 LazyData: true
 Imports:
     methods,

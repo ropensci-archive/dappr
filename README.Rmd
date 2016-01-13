@@ -1,4 +1,4 @@
-dapper
+dappr
 =====
 
 ```{r echo=FALSE}
@@ -10,25 +10,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/sckott/dapper.svg)](https://travis-ci.org/sckott/dapper)
+[![Build Status](https://travis-ci.org/sckott/dappr.svg)](https://travis-ci.org/sckott/dappr)
 
-`dapper` is a general purpose R client for working with OPeNDAP servers
+`dappr` is a general purpose R client for working with OPeNDAP servers
 
 ## Installation
 
 ```{r eval=FALSE}
-devtools::install_github("dapper")
+devtools::install_github("dappr")
 ```
 
 ```{r}
-library("dapper")
+library("dappr")
 ```
 
 ## Search
 
 ```{r}
 library("dplyr")
-od_search("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000") %>%
+od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000") %>%
   select(name, dataSize, date)
 ```
 

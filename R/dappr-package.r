@@ -7,8 +7,8 @@
 #' xml_attr xml_attrs xml_ns read_html
 #' @importFrom data.table rbindlist
 #' @import digest ncdf4
-#' @name dapper-package
-#' @aliases dapper
+#' @name dappr-package
+#' @aliases dappr
 #' @docType package
 #' @author Scott Chamberlain \email{myrmecocystus@@gmail.com}
 #' @keywords package

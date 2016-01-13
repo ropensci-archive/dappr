@@ -1,20 +1,22 @@
-dapper
+dappr
 =====
 
-[![Build Status](https://travis-ci.org/sckott/dapper.svg)](https://travis-ci.org/sckott/dapper)
 
-`dapper` is a general purpose R client for working with OPeNDAP servers
+
+[![Build Status](https://travis-ci.org/sckott/dappr.svg)](https://travis-ci.org/sckott/dappr)
+
+`dappr` is a general purpose R client for working with OPeNDAP servers
 
 ## Installation
 
 
 ```r
-devtools::install_github("dapper")
+devtools::install_github("dappr")
 ```
 
 
 ```r
-library("dapper")
+library("dappr")
 ```
 
 ## Search
@@ -22,7 +24,7 @@ library("dapper")
 
 ```r
 library("dplyr")
-od_search("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000") %>% 
+od_list("MERRA_MONTHLY", "MSTMNXMLD.5.2.0", "2000") %>%
   select(name, dataSize, date)
 #>                                              name dataSize
 #> 1  MERRA200.prod.simul.tavgM_2d_mld_Nx.200001.hdf 10269061
