@@ -1,6 +1,5 @@
 # get metadata and data -----------------------
 ncdf4_get <- function(file){
-  check4ncdf4()
   nc <- ncdf4::nc_open(file)
   tmp <- unclass(nc)
 
@@ -25,7 +24,6 @@ ncdf4_get <- function(file){
 }
 
 ncdf4_summary <- function(file){
-  check4ncdf4()
   nc <- ncdf4::nc_open(file, readunlim = FALSE)
   tmp <- unclass(nc)
   on.exit(ncdf4::nc_close(nc))
