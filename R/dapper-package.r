@@ -6,7 +6,7 @@
 #' @importFrom xml2 xml_text xml_find_all xml_children xml_name
 #' xml_attr xml_attrs xml_ns read_html
 #' @importFrom data.table rbindlist
-#' @import digest ncdf
+#' @import digest ncdf4
 #' @name dapper-package
 #' @aliases dapper
 #' @docType package
