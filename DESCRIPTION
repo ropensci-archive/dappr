@@ -4,7 +4,7 @@ Description: Client for 'OPeNDAP' servers. Includes
     functions to search for 'datasets', get summary information on
     'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
     'OPeNDAP' information: http://www.opendap.org/ .
-Version: 0.0.2.9500
+Version: 0.0.3.9100
 License: MIT + file LICENSE
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut","cre"),
     email = "myrmecocystus@gmail.com"))

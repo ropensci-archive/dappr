@@ -12,8 +12,8 @@ test_that("basic usage works", {
   expect_is(cc, "data.frame")
   expect_is(aa$name, "character")
 
-  expect_more_than(NROW(bb), NROW(aa))
-  expect_more_than(NROW(cc), NROW(aa))
+  expect_gt(NROW(bb), NROW(aa))
+  expect_gt(NROW(cc), NROW(aa))
 })
 
 test_that("od_list fails well with no input", {
