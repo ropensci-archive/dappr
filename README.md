@@ -4,6 +4,7 @@ dappr
 
 
 [![Build Status](https://travis-ci.org/ropensci/dappr.svg)](https://travis-ci.org/ropensci/dappr)
+[![codecov.io](https://codecov.io/github/ropensci/dappr/coverage.svg?branch=master)](https://codecov.io/github/ropensci/dappr?branch=master)
 
 `dappr` is a general purpose R client for working with OPeNDAP servers
 
