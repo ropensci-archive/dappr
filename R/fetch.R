@@ -219,7 +219,7 @@ fix_dims <- function(dimargs, .info) {
 }
 
 # which_min <- function(x) {
-#   if (is(x, "character")) {
+#   if (inherits(x, "character")) {
 #     grep(min(tmp), tmp)
 #   } else {
 #     which.min(x)

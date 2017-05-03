@@ -27,12 +27,12 @@ dds <- function(id, url = durl(), ...) {
       var_name <- strextract(var, "[A-Za-z0-9]+")
       atts <- lapply(strsplit(strextract(var, "\\[.+"), "\\]")[[1]], function(z) {
         out <- strtrim(strsplit(sub("\\[", "", z), "=")[[1]])
-        setNames(list(out[2]), out[1])
+        stats::setNames(list(out[2]), out[1])
       })
       all <- c(list(type = type, var = var_name), unlist(atts))
-      all <- setNames(all, tolower(names(all)))
+      all <- stats::setNames(all, tolower(names(all)))
       toadd <- dds_vars()[!dds_vars() %in% names(all)]
-      data.frame(c(all, setNames(rep("", length(toadd)), toadd)), stringsAsFactors = FALSE)
+      data.frame(c(all, stats::setNames(rep("", length(toadd)), toadd)), stringsAsFactors = FALSE)
     })
   )
 }

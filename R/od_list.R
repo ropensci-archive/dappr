@@ -32,7 +32,7 @@ od_list <- function(..., url = durl(), callopts = list()) {
     nodes <- xml_children(xml2::xml_find_all(xml, "//thredds:dataset", ns = xml_ns(xml))[[1]])
     rbind_fill(lapply(nodes, function(z) {
       metadata <- lapply(xml_children(z), function(w) {
-        c(setNames(list(value = xml_text(w)), xml_name(w)), as.list(xml_attrs(w)))
+        c(stats::setNames(list(value = xml_text(w)), xml_name(w)), as.list(xml_attrs(w)))
       })
       data.frame(c(name = xml_attr(z, "name"), as.list(unlist(metadata))), stringsAsFactors = FALSE)
     }))

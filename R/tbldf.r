@@ -67,7 +67,7 @@ type_sum.Date <- function (x) "date"
 #' @method type_sum factor
 #' @export
 #' @rdname type_sum
-type_sum.factor <- function (x) "fctr"  
+type_sum.factor <- function (x) "fctr"
 
 #' @method type_sum integer
 #' @export
@@ -83,7 +83,7 @@ type_sum.logical <- function (x) "lgl"
 #' @export
 #' @rdname type_sum
 type_sum.array <- function (x){
-  paste0(NextMethod(), "[", paste0(dim(x), collapse = ","), 
+  paste0(NextMethod(), "[", paste0(dim(x), collapse = ","),
          "]")
 }
 
@@ -115,6 +115,6 @@ obj_type <- function (x)
     paste0("<S3:", paste0(class(x), collapse = ", "), ">")
   }
   else {
-    paste0("<S4:", paste0(is(x), collapse = ", "), ">")
+    paste0("<S4:", paste0(inherits(x), collapse = ", "), ">")
   }
 }

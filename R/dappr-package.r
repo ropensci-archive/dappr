@@ -1,7 +1,5 @@
 #' General purpose R client for ERDDAP servers
 #'
-#' @importFrom stats setNames
-#' @importFrom methods is
 #' @importFrom httr GET content stop_for_status write_disk
 #' @importFrom xml2 xml_text xml_find_all xml_children xml_name
 #' xml_attr xml_attrs xml_ns read_html
