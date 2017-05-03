@@ -54,4 +54,3 @@ x <- "MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_aph_unc_443_giop_9km.nc.nc4"
 \author{
 Scott Chamberlain <myrmecocystus@gmail.com>
 }
-

@@ -17,4 +17,3 @@ be named parameters)}
 \description{
 Coerce to info object
 }
-

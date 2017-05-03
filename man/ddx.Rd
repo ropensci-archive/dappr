@@ -32,4 +32,3 @@ ddx('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
 \author{
 Scott Chamberlain <myrmecocystus@gmail.com>
 }
-

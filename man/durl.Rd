@@ -9,4 +9,3 @@ durl()
 \description{
 Default OPeNDAP server URL
 }
-

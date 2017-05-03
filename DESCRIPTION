@@ -4,7 +4,7 @@ Description: Client for 'OPeNDAP' servers. Includes
     functions to search for 'datasets', get summary information on
     'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
     'OPeNDAP' information: <http://www.opendap.org/>.
-Version: 0.0.3.9300
+Version: 0.0.4.9110
 License: MIT + file LICENSE
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut","cre"),
     email = "myrmecocystus@gmail.com"))
@@ -20,7 +20,7 @@ Imports:
     data.table (>= 1.9.6),
     digest (>= 0.6.10)
 Suggests:
-    roxygen2 (>= 5.0.1),
+    roxygen2 (>= 6.0.1),
     knitr,
     testthat
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

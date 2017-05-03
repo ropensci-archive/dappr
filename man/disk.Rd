@@ -18,4 +18,3 @@ Default: \code{TRUE}}
 \description{
 Options for saving ERDDAP datasets.
 }
-

@@ -2,8 +2,8 @@
 % Please edit documentation in R/dappr-package.r
 \docType{package}
 \name{dappr-package}
-\alias{dappr}
 \alias{dappr-package}
+\alias{dappr}
 \title{General purpose R client for ERDDAP servers}
 \description{
 General purpose R client for ERDDAP servers
@@ -12,4 +12,3 @@ General purpose R client for ERDDAP servers
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-

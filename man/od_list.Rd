@@ -32,4 +32,3 @@ od_list("MODISA", "L3SMI", "2015", url = url)
 od_list("MODISA", "L3SMI", "2015", "336", url = url)
 }
 }
-

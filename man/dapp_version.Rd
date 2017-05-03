@@ -21,4 +21,3 @@ dapp_version(durl())
 dapp_version('http://oceandata.sci.gsfc.nasa.gov/opendap/')
 }
 }
-

@@ -30,4 +30,3 @@ url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
 dds('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_CHL_chl_ocx_4km.nc', url)
 }
 }
-
