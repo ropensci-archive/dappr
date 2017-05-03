@@ -25,7 +25,7 @@ FIXME - messy, messy parsing.
 ddx(id = "MERRA_MONTHLY/MSTMNXMLD.5.2.0/2015/MERRA300.prod.simul.tavgM_2d_mld_Nx.201507.hdf")
 
 # NASA's ocean color data
-url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
+url <- 'https://oceandata.sci.gsfc.nasa.gov/opendap/'
 ddx('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
 }
 }

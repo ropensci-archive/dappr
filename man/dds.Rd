@@ -26,7 +26,7 @@ dds("MERRA_MONTHLY/MAIMNXINT.5.2.0/1980/MERRA100.prod.assim.instM_2d_int_Nx.1980
 dds("MERRA_MONTHLY/MSTMNXMLD.5.2.0/2011/MERRA300.prod.simul.tavgM_2d_mld_Nx.201105.hdf")
 
 # NASA's ocean color data
-url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
+url <- 'https://oceandata.sci.gsfc.nasa.gov/opendap/'
 dds('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_CHL_chl_ocx_4km.nc', url)
 }
 }

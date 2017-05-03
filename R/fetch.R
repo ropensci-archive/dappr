@@ -3,31 +3,34 @@
 #' @export
 #'
 #' @param x input
-#' @param ... Dimension arguments. See examples. Can be any 1 or more of the dimensions
-#' for the particular dataset - and the dimensions vary by dataset. For each dimension,
-#' pass in a vector of length two, with min and max value desired.
+#' @param ... Dimension arguments. See examples. Can be any 1 or more of the
+#' dimensions for the particular dataset - and the dimensions vary by dataset.
+#' For each dimension, pass in a vector of length two, with min and max
+#' value desired.
 #' @param fields (character) Fields to return, in a character vector.
 #' @param stride (integer) How many values to get. 1 = get every value, 2 = get
 #' every other value, etc. Default: 1 (i.e., get every value)
 #' @param fmt (character) One of csv or nc (for netcdf). Default: nc
-#' @param url A URL for an ERDDAP server. Default: \url{http://upwell.pfeg.noaa.gov/erddap/}
-#' @param store One of \code{\link{disk}} (default) or \code{\link{memory}}. You
-#' can pass options to \code{\link{disk}}
-#' @param read (logical) Read data into memory or not. Does not apply when \code{store}
-#' parameter is set to memory (which reads data into memory). For large csv, or
-#' especially netcdf files, you may want to set this to \code{FALSE}, which simply
-#' returns a summary of the dataset - and you can read in data piecemeal later.
-#' Default: \code{TRUE}
+#' @param url A URL for an OpenDAP server. Default:
+#' \url{https://goldsmr2.sci.gsfc.nasa.gov/opendap/}
+#' @param store One of \code{\link{disk}} (default) or \code{\link{memory}}.
+#' You can pass options to \code{\link{disk}}
+#' @param read (logical) Read data into memory or not. Does not apply when
+#' \code{store} parameter is set to memory (which reads data into memory). For
+#' large csv, or especially netcdf files, you may want to set this to
+#' \code{FALSE}, which simply returns a summary of the dataset - and you can
+#' read in data piecemeal later. Default: \code{TRUE}
 #' @param callopts Pass on curl options to \code{\link[httr]{GET}}
 #'
-#' @return Prints a summary of the data on return, but you can index to various information.
+#' @return Prints a summary of the data on return, but you can index to
+#' various information.
 #' @author Scott Chamberlain <myrmecocystus@@gmail.com>
 #' @examples \dontrun{
 #' fetch(id = "MERRA_MONTHLY/MSTMNXMLD.5.2.0/2015/MERRA300.prod.simul.tavgM_2d_mld_Nx.201507.hdf")
 #'
 #' # NASA's ocean color data
-#' url <- 'http://oceandata.sci.gsfc.nasa.gov/opendap/'
-#' fetch('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url)
+#' url <- 'https://oceandata.sci.gsfc.nasa.gov/opendap/'
+#' fetch('MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_a_412_giop_4km.nc', url = url)
 #'
 #' x <- "MODISA/L3SMI/2015/006/A2015006.L3m_DAY_IOP_aph_unc_443_giop_9km.nc.nc4"
 #' }
